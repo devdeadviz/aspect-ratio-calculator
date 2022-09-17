@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --light-gray: #d3d3d3;
+}
+
+.ratio-calculator-wrapper {
+  width: 30rem;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.ratio-calculator-wrapper > h2 {
+  text-align: center;
+}
+
+.ratio-calculator-heading {
+  margin: 10px 0;
+}
+
+input {
+  outline: none;
+  padding: 5px;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+}
+
+#presets {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+}
+
+.ratio-wrapper,
+.pixels-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem 0;
+}

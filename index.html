@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta author="Kuldeep" description="Aspect Ratio calculator" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aspect Ratio Calculator</title>
+  </head>
+  <body>
+    <div class="ratio-calculator-wrapper">
+      <h2>Aspect Ratio Calculator</h2>
+      <p>
+        Use this <b>ratio calculator</b> to check the dimensions when resizing
+        images.
+      </p>
+      <form action="#">
+        <h3 class="ratio-calculator-heading">Common Presets</h3>
+        <select name="presets" id="presets" onchange="presetFunc(event)">
+          <option value="hdvideo">HD Video 16:9</option>
+          <option value="standardmonitor">Standard Monitor 4:3</option>
+          <option value="classicfilm">Classic Film 3:2</option>
+          <option value="cinemascope">CinemaScope 21:9</option>
+          <option value="custom">Custom</option>
+        </select>
+        <section class="ratio-wrapper">
+          <div class="ratio-width-wrapper">
+            <h3 class="ratio-calculator-heading">Ratio Width</h3>
+            <input type="number" id="ratio-width" value="16" />
+          </div>
+          <div class="ratio-height-wrapper">
+            <h3 class="ratio-calculator-heading">Ratio Height</h3>
+            <input type="number" id="ratio-height" value="9" />
+          </div>
+        </section>
+        <section class="pixels-wrapper">
+          <div class="pixels-width-wrapper">
+            <h3 class="ratio-calculator-heading">Pixels Width</h3>
+            <input type="number" id="pixels-width" value="1280" />
+          </div>
+          <div class="pixels-height-wrapper">
+            <h3 class="ratio-calculator-heading">Pixels Height</h3>
+            <input type="number" id="pixels-height" value="720" />
+          </div>
+        </section>
+      </form>
+    </div>
+    <script src="./scripts/app.js" type="text/javascript"></script>
+  </body>
+</html>
